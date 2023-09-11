@@ -53,13 +53,10 @@ jobs:
         supplier-email: $SUPPLIER_EMAIL 
         supplier-phone: $SUPPLIER_PHONE
 
-    - name: Build the Docker image
-      run: docker build . -t scribe-product:${{ github.sha }}
-
     - name: Generate signed SBOM for docker image
       uses: scribe-security/action-bom@master
       with:
-        target: 'docker:scribe-product:${{ github.sha }}'
+        target: 'postgres:latest'
         scribe-enable: true
         components: packages,files,dep
         product-key: postgres
