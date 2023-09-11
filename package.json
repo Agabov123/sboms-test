@@ -1,0 +1,20 @@
+{
+  "name": "sboms-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agabov123/sboms-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agabov123/sboms-test/issues"
+  },
+  "homepage": "https://github.com/Agabov123/sboms-test#readme"
+}
