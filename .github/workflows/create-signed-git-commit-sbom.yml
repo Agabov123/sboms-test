@@ -34,10 +34,10 @@ jobs:
     - name: Generate signed SBOM for repo content
       uses: scribe-security/action-bom@master
       with:
-        target: 'git:.'
+        target: 'posgres:latest'
         scribe-enable: true
         components: packages,files,dep
-        product-key: scribe-demo-prod-v1
+        product-key: postgres
         scribe-client-id: ${{ secrets.CLIENT_ID }}
         scribe-client-secret: ${{ secrets.CLIENT_SECRET }}
         label: is_git_commit
